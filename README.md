@@ -16,6 +16,7 @@ Letting people be where they want to be.<br />
 [Matrix][mb-matrix] |
 [Mattermost][mb-mattermost] |
 [MSTeams][mb-msteams] |
+[Nostr][mb-nostr] |
 [Rocket.Chat][mb-rocketchat] |
 [Slack][mb-slack] |
 [Telegram][mb-telegram] |
@@ -98,6 +99,7 @@ And more...
 - [Microsoft Teams](https://teams.microsoft.com)
 - [Mumble](https://www.mumble.info/)
 - [Nextcloud Talk](https://nextcloud.com/talk/)
+- [Nostr](https://nostr.org/)
 - [Rocket.chat](https://rocket.chat)
 - [Slack](https://slack.com)
 - [Ssh-chat](https://github.com/shazow/ssh-chat)
@@ -161,6 +163,7 @@ Questions or want to test on your favorite platform? Join below:
 - [Keybase][mb-keybase]
 - [Matrix][mb-matrix]
 - [Mattermost][mb-mattermost]
+- [Nostr][mb-nostr]
 - [Rocket.Chat][mb-rocketchat]
 - [Slack][mb-slack]
 - [Telegram][mb-telegram]
@@ -414,6 +417,7 @@ Matterbridge wouldn't exist without these libraries:
 - msgraph.go - <https://github.com/yaegashi/msgraph.go>
 - mumble - <https://github.com/layeh/gumble>
 - nctalk - <https://github.com/gary-kim/go-nc-talk>
+- nostr - <https://github.com/nbd-wtf/go-nostr>
 - rocketchat - <https://github.com/RocketChat/Rocket.Chat.Go.SDK>
 - slack - <https://github.com/nlopes/slack>
 - sshchat - <https://github.com/shazow/ssh-chat>
@@ -442,3 +446,4 @@ Matterbridge wouldn't exist without these libraries:
 [mb-whatsapp]: https://www.whatsapp.com/
 [mb-xmpp]: https://inverse.chat/
 [mb-zulip]: https://matterbridge.zulipchat.com/register/
+[mb-nostr]: https://github.com/ericpp/matterbridge/

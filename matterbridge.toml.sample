@@ -1824,6 +1824,36 @@ OutMessage="example.tengo"
 RemoteNickFormat="remotenickformat.tengo"
 
 ###################################################################
+# Nostr Live Events
+###################################################################
+
+[nostr]
+
+#You can configure multiple servers "[nostr.name]" or "[nostr.name2]"
+#In this example we use [nostr.chat]
+#REQUIRED
+[nostr.chat]
+
+#Default relay server to connect to when none is specified in the channel address.
+#REQUIRED
+DefaultRelay="wss://nos.lol"
+
+#Public key for the bot in npub format (Nostr public key format)
+#You can generate keys using a Nostr client or tools like https://github.com/nostr-protocol/nips/blob/master/06.md
+#REQUIRED
+PublicKey="npub1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+#Private key for the bot in nsec format (Nostr private key format)
+#REQUIRED
+PrivateKey="nsec1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+#Channel format for Nostr
+#Channels in Nostr are specified using naddr format (NIP-19)
+#Examples:
+# naddr1qqspr9amnq2uadz6x5sz6atwde3jum5sd4xqkmxrggaqkdcmwfjkxarpfgryjentvf5h9qtzwafhx5urcv9sqft2wshkuxvuh0alwpk59lrd6h3v
+# For more information on Nostr addressing, see https://github.com/nostr-protocol/nips/blob/master/19.md
+
+###################################################################
 #Gateway configuration
 ###################################################################
 
@@ -1875,6 +1905,8 @@ enable=true
     #   msteams  |      threadId      |    19:82abcxx@thread.skype    | You'll find the threadId in the URL
     # -------------------------------------------------------------------------------------------------------------------------------------
     #   mumble   |    channel id      |              42               | The channel ID, as shown in the channel's "Edit" window
+    # -------------------------------------------------------------------------------------------------------------------------------------
+    #   nostr    |       naddr        | naddr1qq9rzde5xqunqdpex5mq... | The Nostr address for the live event
     # -------------------------------------------------------------------------------------------------------------------------------------
     # rocketchat |      channel       |            #channel           | # is required for private channels too
     # -------------------------------------------------------------------------------------------------------------------------------------
